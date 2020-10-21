@@ -18,21 +18,24 @@ struct ChatsView: View {
     var body: some View {
         NavigationView {
             VStack {
-//                TextField("phone", text: $phone)
-//                    .padding(8)
-//                    .background(Color(.systemGray6))
-//                    .cornerRadius(8)
-//                    .padding(.horizontal, 10)
+                //                TextField("phone", text: $phone)
+                //                    .padding(8)
+                //                    .background(Color(.systemGray6))
+                //                    .cornerRadius(8)
+                //                    .padding(.horizontal, 10)
                 ZStack {
                     List(networking.partners) { user in
-                        ChatList(user: user)
-                    }
+//                        NavigationLink(destination: ChatView(user: user)) {
+                            ChatList(user: user)
+                        }
+//                    }
                     .listStyle(PlainListStyle())
                     
                     NewChatButton(isAddContact: self.$isAddContact)
                     
                 }
             }
+            .navigationBarItems(leading: Button("Check"){ self.networking.getDataPartner()})
             .navigationTitle("Chats")
             .sheet(isPresented: $isAddContact) {
                 NavigationView {
@@ -68,7 +71,7 @@ struct ChatsView: View {
                         
                     })
                 }
-            
+                
             }
         }
     }
@@ -86,7 +89,7 @@ struct ChatsView: View {
             }
         }
     }
-    
+        
 }
 
 struct NewChatButton: View {

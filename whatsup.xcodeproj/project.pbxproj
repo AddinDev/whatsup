@@ -26,7 +26,7 @@
 		042E8B1125394C6C00EDC624 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E8B1025394C6C00EDC624 /* StatusView.swift */; };
 		047CB44F253AE46A00C6EC7C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CB44E253AE46A00C6EC7C /* ImagePicker.swift */; };
 		04B8CF5F253D22CD007F22C7 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8CF5E253D22CD007F22C7 /* ChatList.swift */; };
-		04B8CF62253D3493007F22C7 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8CF61253D3493007F22C7 /* AddContactView.swift */; };
+		04F16400253E77CE00A07A71 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F163FF253E77CE00A07A71 /* ChatView.swift */; };
 		209AA65945F84298DB4BB421 /* Pods_whatsup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA3C8EA7DF3B455A8B512F6 /* Pods_whatsup.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,7 @@
 		042E8B1025394C6C00EDC624 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		047CB44E253AE46A00C6EC7C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		04B8CF5E253D22CD007F22C7 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
-		04B8CF61253D3493007F22C7 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		04F163FF253E77CE00A07A71 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		304ACC104F1F8D283884D9ED /* Pods-whatsup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsup.release.xcconfig"; path = "Target Support Files/Pods-whatsup/Pods-whatsup.release.xcconfig"; sourceTree = "<group>"; };
 		5DA5C6B8DC5BFB56CBBC7F32 /* Pods-whatsup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsup.debug.xcconfig"; path = "Target Support Files/Pods-whatsup/Pods-whatsup.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA3C8EA7DF3B455A8B512F6 /* Pods_whatsup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatsup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +93,7 @@
 			children = (
 				042E8ABE25391EB500EDC624 /* AppDelegate.swift */,
 				042E8AC025391EB500EDC624 /* SceneDelegate.swift */,
-				042E8AD325392C8B00EDC624 /* View */,
+				042E8AD325392C8B00EDC624 /* Intro */,
 				042E8AD825392D3D00EDC624 /* Main */,
 				047CB451253AE46D00C6EC7C /* Sub View */,
 				042E8B0B2539470100EDC624 /* Model */,
@@ -114,7 +114,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		042E8AD325392C8B00EDC624 /* View */ = {
+		042E8AD325392C8B00EDC624 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
 				042E8AC225391EB500EDC624 /* ContentView.swift */,
@@ -122,7 +122,7 @@
 				042E8AF825392E2D00EDC624 /* RegisterView.swift */,
 				042E8AFB253934B900EDC624 /* IntroView.swift */,
 			);
-			path = View;
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		042E8AD825392D3D00EDC624 /* Main */ = {
@@ -151,7 +151,7 @@
 			children = (
 				047CB44E253AE46A00C6EC7C /* ImagePicker.swift */,
 				04B8CF5E253D22CD007F22C7 /* ChatList.swift */,
-				04B8CF61253D3493007F22C7 /* AddContactView.swift */,
+				04F163FF253E77CE00A07A71 /* ChatView.swift */,
 			);
 			path = "Sub View";
 			sourceTree = "<group>";
@@ -300,10 +300,10 @@
 				042E8AF925392E2D00EDC624 /* RegisterView.swift in Sources */,
 				04B8CF5F253D22CD007F22C7 /* ChatList.swift in Sources */,
 				042E8AFF2539354800EDC624 /* MainContainer.swift in Sources */,
+				04F16400253E77CE00A07A71 /* ChatView.swift in Sources */,
 				042E8AF625392E2300EDC624 /* LoginView.swift in Sources */,
 				042E8AC325391EB500EDC624 /* ContentView.swift in Sources */,
 				042E8B09253946FE00EDC624 /* User.swift in Sources */,
-				04B8CF62253D3493007F22C7 /* AddContactView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

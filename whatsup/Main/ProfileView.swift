@@ -13,6 +13,7 @@ struct ProfileView: View {
     var user: User
     let db = Firestore.firestore()
     let defaultImage = "https://firebasestorage.googleapis.com/v0/b/whatsup-27adf.appspot.com/o/default%2Fdefaultpic.jpg?alt=media&token=3e244d8f-f9c2-4680-9c0a-ea17a450a672"
+    @Environment(\.presentationMode) var presentationMode
     @State var image: Image?
     @State var inputImage: UIImage?
     @Binding var isLogged: Bool
@@ -174,10 +175,11 @@ struct ProfileView: View {
                     if error != nil {
                         print(error!.localizedDescription)
                     } else {
-                        self.selected = 0
+                        self.presentationMode.wrappedValue.dismiss()
                         withAnimation {
                             self.isLogged = false
                         }
+                        self.selected = 0
                     }
                 })
             }
